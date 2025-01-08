@@ -1,0 +1,643 @@
+
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+*/
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background:  rgb(245, 245, 248) repeat-y fixed;
+
+    color: #0f0f0f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2.0rem;
+  
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #0b0b0b;
+    text-decoration: underline;
+   
+}
+
+nav ul li a:hover {
+    color: #6c63ff; /* Change text color on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 15px 20px;
+   /* background: #007bff;*/
+    background: linear-gradient(160deg,  #4e34b4, #6fbbbb, #0685a1);
+    color: #fdfcfc;
+}
+
+/* navbar for job page*/
+.navbar {
+    background: linear-gradient(160deg, #4e34b4, #8ee9e9, #0685a1);
+    padding: 10px 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    gap: 95px; /* Space between elements */
+}
+
+.search-container h1 {
+    font-size: 20px;
+    margin: 20;
+    color: #fbf7f7;
+}
+
+.search-bar {
+    display: inline;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 500px;
+}
+
+
+
+
+  /* Search Job Section  job page*/
+  .search-job {
+    text-align: center;
+    padding: 20px;
+    background-color: #caecf0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-bar select,
+.search-bar button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color:  #e9d203;
+    color: rgb(13, 13, 13);
+    border: none;
+    cursor: pointer;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+   
+}
+
+/* Filters Styling */
+.filters {
+    width: 300px;
+   
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #555;
+    
+}
+
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.filter-group p {
+    font-size: 14px;
+    color: #0073e6;
+    cursor: pointer;
+    margin: 5px 0 0;
+}
+
+.filter-group p:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Job List Styles */
+.jobs .jobs-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.jobs-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    box-shadow:  inset 0 -3em 3em rgba(80, 146, 145, 0.3),
+    0 0 0 2px rgb(165, 167, 168);
+}
+
+.jobs-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.jobs-card p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.jobs-card button {
+    background: #0d0d0d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+/* css for featured employer */
+
+.featured-employers {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.featured-employers h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.employer-cards {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+   
+}
+
+.employer-card {
+    min-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employer-card img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover; */
+    flex-wrap: nowrap;
+}
+
+
+/* Optional: Style for scrollbar */
+.employer-cards::-webkit-scrollbar {
+    height: 16px;
+}
+
+.employer-cards::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.employer-cards::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/* css for featured jobs */
+
+
+.featured-jobs {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.featured-jobs h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.job-list {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 10px;
+    justify-content: center;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 250; /* Adjust the width as per your requirement */
+}
+
+.job-card {
+    min-width: 200px;
+    max-width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow:  inset 0 -3em 3em rgba(164, 125, 249, 0.3),
+    0 0 0 2px white;
+   
+    padding: 20px;
+    background-color: linear-gradient(135deg, #264e4e, #0d0d0d);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.job-card h2 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.job-card p {
+    font-size: 1em;
+    color: #533d3d;
+    margin: 5px 0;
+}
+
+.job-card button {
+    background-color: #aa8cef;
+    color: rgb(249, 250, 250);
+    border: thick #1b1b1b;;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.job-card button:hover {
+    background-color: #5c5ce0;
+}
+
+
+
+/* Optional: Style for the scrollbar */
+.job-list::-webkit-scrollbar {
+    height: 15px;
+}
+
+.job-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.job-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/* Common Styles for both Login & Register Pages */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for full-screen background */
+.auth-section {
+    background-image: url('/static/images/IMG_20250108_114205.jpg'); /* Correct path for static images */
+    background-size: cover;
+    background-position:   center;
+    height: calc(100vh - 80px); /* Full height minus navbar (adjust 60px as needed) */
+    display: flex;
+    justify-content: left;
+    align-items:  center;
+    padding: 0 5px; /* Padding for smaller screens */
+}
+
+/* Box container for the form 
+.auth-container {
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}*/
+
+
+
+/* Title for login/register */
+h2 {
+    margin-bottom: 100px;
+    font-size: 2.5rem;
+    color: #101011; /* Purple color */
+    text-shadow: 0 2px 5px rgba(3, 52, 56, 0.5);
+    text-align:  center;
+    justify-content: center;
+}
+
+/* Sub-text for login/register */
+p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 30px;
+    text-align: left;
+   
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 80px;
+    color: #ddd;
+   
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f5f2f2;
+    outline: none;
+    
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding:15px;
+    font-size: 1.1rem;
+    background: #e9d203;
+    color: #252626;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+}
+
+.btn:hover {
+    background: #276463;
+}
+
+/* Redirect text (footer) */
+.redirect {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.redirect a {
+    color: #f3df08;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.redirect a:hover {
+    color: #08929c;
+}
+
+
+/* about section*/
+.about p {
+    font-size: 1.1rem; /* Slightly larger text */
+    max-width: 800px; /* Max width for better text control */
+    margin: 0 auto; /* Center the text */
+    color: #242323; /* Dark gray text */
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+   
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .input-group input, .btn {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .job-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Footer Styling */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+   /* position: relative;
+    bottom: 0;*/
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .how-it-works {
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+footer p.cities {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer p.cities a {
+    text-decoration: none;
+    color: #0073e6;
+    margin: 0 5px;
+}
+
+footer p.cities a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-info {
+    font-size: 14px;
+    color: #666;
+}
+
+footer .footer-info a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+footer .footer-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+   /* Ensure Footer Stays at the Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    width: 100%
+}

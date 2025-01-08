@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+{% extends "base.html" %}
+
+{% block title %}Register - JobRinger{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <h2>Create an Account</h2>
+        <p>Join us to find your dream job!</p>
+        <form action="/register" method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Choose a password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <p class="auth-footer">Already have an account? <a href="/login">Login here</a></p>
+    </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRinger</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="static\images\Screenshot 2024-12-30 215758.png" alt="JobRinger Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+   
+    <footer>
+        <section class="how-it-works">
+            <h2>Jobs in India</h2>
+            <p class="cities">
+                <a href="#">#Mumbai</a>
+                <a href="#">#Delhi</a>
+                <a href="#">#Ajmer</a>
+                <a href="#">#Pune</a>
+                <a href="#">#Hyderabad</a>
+                <a href="#">#Agra</a>
+                <a href="#">#Chennai</a>
+                <a href="#">#Kolkata</a>
+                <a href="#">#Indore</a>
+                <a href="#">#Gurugram</a>
+                <a href="#">#Jaipur</a>
+                <a href="#">#Ahmedabad</a>
+            </p>
+        </section>
+    
+        <div class="footer-info">
+            <p>&copy; 2024 Job Bringer. All Rights Reserved.</p>
+            <p>
+                <a href="#">Contact Us</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms & Conditions</a>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
